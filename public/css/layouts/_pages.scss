@@ -1,0 +1,233 @@
+.page-faq{
+	.card{
+		border-radius: 0;
+		border: none;
+		border-bottom: 1px solid #9a90a5;
+		background-color: transparent;
+	}
+	.card-header{
+		padding: 0;
+		border-radius: 0;
+		border: none;
+		background-color: transparent;
+	}
+	.card-link{
+		display: block;
+		font-size: 18px;
+		font-weight: bold;
+		padding: 25px 35px 25px 0;
+		color: $color-text2;
+		position: relative;
+		&:after{
+			content: "\4d";
+			font-family: 'ElegantIcons';
+			position: absolute;
+			top: calc(50% - 24px);
+			right: 0;
+			font-size: 32px;
+			color: $color-text;
+		}
+		&.collapsed{
+			color: $color-text;
+			&:after{
+				content: "\4c";
+			}
+		}
+	}
+	.card-body{
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 0;
+		font-size: 16px;
+		line-height: 30px;
+		text-align: justify;
+		p{
+			margin-bottom: 30px;
+			&:last-child{
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+.head-page{
+	font-size: 62px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1;
+	margin-bottom: 40px;
+}
+.page-policy{
+	.img{
+		img{
+			width: 100%;
+			border: 10px solid #fff;
+		}
+	}
+	.ct{
+		.head{
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 28px;
+			margin-bottom: 13px;
+		}
+		p{
+			font-size: 16px;
+			line-height: 1.9;
+		}
+	}
+	.item{
+		margin-bottom: 40px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+.page-contact{
+	.head{
+		font-size: 24px;
+		text-transform: uppercase;
+		font-weight: bold;
+		margin-bottom: 15px;
+	}
+	.ct-contact{
+		margin-bottom: 30px;
+		.add{
+			font-size: 16px;
+			font-weight: bold;
+			margin-bottom: 15px;
+		}
+		ul{
+			li{
+				a{
+					display: block;
+					margin-bottom: 12px;
+					transition: 0.2s;
+					i{
+						margin-right: 8px;
+					}
+					&:hover{
+						color: $color_text2;
+					}
+				}
+			}
+		}
+	}
+	.form-contact{
+		.form-group{
+			position: relative;
+			margin-bottom: 25px;
+			&.company{
+				&:before{
+					content: "\e021";
+				}
+			}
+			&.country{
+				&:before{
+					content: "\e0e3";
+				}
+			}
+			&.name{
+				&:before{
+					content: url(../images/ic-name.png);
+					top: 0px;
+				}
+			}
+			&.phone{
+				&:before{
+					content: url(../images/ic-phone.png);
+					top: 0px;
+				}
+			}
+			&.content{
+				&:before{
+					content: "\76";
+				}
+			}
+			&:before{
+				content: "\e010";
+				position: absolute;
+				left: 0;
+				top: -1px;
+				font-family: eleganticons;
+				font-size: 22px;
+				z-index: 1;
+				color: $color_text;
+			}
+			.form-control{
+				background-color: transparent;
+				border-radius: 0;
+				border: none;
+				border-bottom: 1px solid #a596ba;
+				box-shadow: none;
+				padding-left: 32px;
+				padding-bottom: 15px;
+				color: $color-text;
+				&::placeholder{
+					color: $color-text;
+				}
+			}
+		}
+		.btn-contact{
+			text-align: right;
+			button{
+				font-size: 16px;
+				color: $c1;
+				transition: 0.3s;
+				background-color: $color-text;
+				text-transform: uppercase;
+				padding: 12px 60px;
+				border-radius: 30px;
+				&:hover{
+					background-color: $color-hv;
+				}
+			}
+		}
+	}
+	.map-contact{
+		height: 100%;
+		border: 10px solid #fff;
+		margin-left: -30px;
+		iframe{
+			width: 100%;
+			height: 100%;
+			min-height: 400px;
+		}
+	}
+}
+@media (max-width: 991px) {
+	.page-policy .img{
+		margin-bottom: 35px;
+	}
+	.page-contact .map-contact{
+		margin-top: 30px;
+		margin-left: 0;
+	}
+
+}
+@media (max-width: 767px) {
+	.head-page{
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+	.page-faq .card-link{
+		font-size: 16px;
+	}
+	.page-faq .card-body {
+		font-size: 14px;
+		line-height: 1.5;
+		p{
+			margin-bottom: 20px;
+			
+		}
+	}
+	.page-policy .item{
+		margin-bottom: 25px;
+	}
+	.page-policy .ct .head{
+		font-size: 25px;
+	}
+	.page-contact .head{
+		font-size: 20px;
+	}
+	
+}

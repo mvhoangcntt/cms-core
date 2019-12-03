@@ -1,0 +1,147 @@
+body{
+	font-size: 14px;
+	font-family: $f1;
+	line-height: 1.5;
+	color: $color_text;
+}
+.wrap{
+	overflow: hidden;
+}
+.sec-primary{
+	padding: 50px 0;
+	@media (max-width: 767px) {
+		padding: 30px 0;
+	}
+}
+.bg-primary{
+	background-color: #f9f6f4 !important;
+}
+.ic-cart{
+	display: inline-block;
+	width: 34px;
+	height: 38px;
+	background: url(../images/ic-cart.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.ic-user{
+	display: inline-block;
+	width: 19px;
+	height: 22px;
+	background: url(../images/ic-user.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.ic-cart-prd{
+	display: inline-block;
+	width: 34px;
+	height: 38px;
+	background: url(../images/ic-cart-prd.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.head-primary{
+	font-size: 62px;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1;
+	text-align: center;
+	margin: 0 0 15px 0;
+	span{
+		font-size: 32px;
+		font-weight: 400;
+		display: block;
+	}
+	&.v1{
+		text-align: left;
+	}
+	@media (max-width: 991px) {
+		font-size: 40px;
+		span{
+			font-size: 20px;
+		}
+	}
+}
+.i-check{
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
+	input{
+		display: none;
+		&:checked + i:after{
+			opacity: 1;
+		}
+		&:checked + i + span{
+			color: $color-hv;
+		}
+	}
+	i{
+		width: 22px;
+		height: 22px;
+		border: solid 1px $color-text;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 13px;
+		font-style: normal;
+		display: inline-block;
+		vertical-align: middle;
+		margin-top: -2px;
+		margin-right: 5px;
+		&:after{
+			content: '';
+			display: block;
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			margin: 2px;
+			opacity: 0;
+			background: $color-hv;
+		}
+	}
+	&.v2{
+		input{
+			&:checked + i + span{
+				color: inherit;
+			}
+		}
+		i{
+			width: 14px;
+			height: 14px;
+			border-radius: 3px;
+			margin-top: -4px;
+			&:after{
+				width: 8px;
+				height: 8px;
+				border-radius: 2px;
+			}
+		}
+	}
+}
+.delay02 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s; }
+
+.delay04 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s; }
+
+.delay06 {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s; }
+
+.delay08 {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s; }
+
+.delay10 {
+  -webkit-animation-delay: 1.0s;
+  animation-delay: 1.0s; }
+
+.delay12 {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s; }
+
+.delay14 {
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s; }
+
+.delay16 {
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s; }

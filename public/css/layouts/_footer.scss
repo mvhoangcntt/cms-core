@@ -1,0 +1,109 @@
+footer{
+	font-size: 14px;
+	background-color: $color-text;
+	color: $c1;
+}
+.ft-top{
+	padding: 70px 0 60px 0;
+}
+.ft-item{
+	.head{
+		margin-bottom: 10px;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		span{
+			display: none;
+		}
+	}
+	strong{
+		display: block;
+		margin-bottom: 12px;
+	}
+	p{
+		margin-bottom: 10px;
+	}
+	ul{
+		li{
+			a{
+				display: block;
+				margin-bottom: 12px;
+				transition: 0.2s;
+				i{
+					margin-right: 8px;
+				}
+				&:hover{
+					color: $color_text2;
+				}
+			}
+		}
+	}
+	.regis-email{
+		position: relative;
+		.form-control{
+			background: transparent;
+			border-radius: 0;
+			border: none;
+			border-bottom: 1px solid rgba($c1,0.5);
+			color: $c1;
+			box-shadow: none;
+			padding: 15px 15px 15px 0;
+			&::placeholder{
+				color: $c1;
+			}
+		}
+		button{
+			position: absolute;
+			right: 0;
+			top: 0;
+			height: 100%;
+			padding-left: 10px;
+			color: $c1;
+			i{
+				font-size: 16px;
+			}
+		}
+	}
+	.social{
+		margin-top: 30px;
+		a{
+			display: inline-block;
+			margin-right: 30px;
+			transition: 0.2s;
+			i{
+				font-size: 14px;
+			}
+			&:hover{
+				color: $color_text2;
+			}
+		}
+	}
+}
+.ft-bottom{
+	background-color: #5c4684;
+	padding: 15px 0;
+	.ct{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		a{
+			display: inline-block;
+			i{
+				font-size: 20px;
+			}
+		}
+	}
+	.copy-right{
+		font-weight: 300;
+		font-size: 14px;
+		a{
+			transition: 0.2s;
+			&:hover{
+				color: #fff;
+			}
+		}
+	}
+}
